@@ -8,7 +8,7 @@ const ControllableStates=()=>{
 
     return(
         <div>
-            <div>{`value:${value!==null?`'${value}'` : 'null'}}`}</div>
+            <div>{`value:${value!==null?`'${value}'` : 'null'}`}</div>
             <div>{`inputValue: '${inputValue}'`}</div>
             <br/>
             <Autocomplete
@@ -20,9 +20,10 @@ const ControllableStates=()=>{
         onInputChange={(event, newInputValue) => {
           setInputValue(newInputValue);
         }}
-        id="controllable-states-demo"
+        
+        id="freeSolo"
         options={options}
-        sx={{ width: 300 }}
+        sx={{ width: 400 }}
         renderInput={(params) => <TextField {...params} label="Controllable" />}
       />
         </div>
